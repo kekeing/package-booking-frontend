@@ -1,13 +1,23 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <router-link to = "/postpackage">提交包裹</router-link>||
+      <router-link to = "/reserve">预约取件</router-link>||
+      <router-link to = "/list">菜鸟驿站</router-link>
+      <br>
+      <br>
+      <router-view></router-view>
+
     </div>
-    <router-view/>
   </div>
 </template>
+<script>
 
+export default{
+  components : {
+}
+}
+</script>
 <style lang="scss">
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
